@@ -1,0 +1,68 @@
+{
+  "dynamicElements": [
+    {
+      "targetClass": "ad-container",
+      "controls": [
+        {
+          "targetVar": "bgImage",
+          "title": "Background Image",
+          "property": "background-image",
+          "default": "url('https://adylic.s3.eu-west-2.amazonaws.com/default-bg-image.webp')",
+          "value": "url('${bgImage}')"
+        }
+      ]
+    },
+    {
+      "targetClass": "subheadline",
+      "controls": [
+        {
+          "targetVar": "subheadlineCopy",
+          "title": "Subheadline",
+          "property": "copy",
+          "default": "London to Tropical Island",
+          "value": "London to ${subheadlineCopy}"
+        },
+        {
+          "targetVar": "subheadlineFontSize",
+          "title": "Subheadline Font Size (px)",
+          "property": "font-size",
+          "default": 24,
+          "value": "${subheadlineFontSize}px",
+          "options": {
+            "min": 16,
+            "max": 32,
+            "step": 2
+          }
+        },
+        {
+          "targetVar": "subheadlineBackgroundColor",
+          "title": "Subheadline background color",
+          "property": "background-color",
+          "default": "#fff",
+          "value": "${subheadlineBackgroundColor}",
+          "options": ["#fff", "#000"]
+        },
+        {
+          "targetVar": "subheadlineColor",
+          "title": "Subheadline color",
+          "property": "color",
+          "default": "#ff6600",
+          "value": "${subheadlineColor}",
+          "options": ["#ff6600", "#fff", "#000"]
+        }
+      ]
+    },
+    {
+      "targetClass": "cta",
+      "controls": [
+        {
+          "targetVar": "ctaCopy",
+          "title": "CTA Copy",
+          "property": "copy",
+          "default": "Learn More",
+          "value": "${ctaCopy}"
+        }
+      ]
+    }
+  ]
+}
